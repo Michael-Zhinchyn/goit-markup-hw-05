@@ -26,13 +26,15 @@
             ><span class="logo-firstcolor">Web</span>Studio</a
           >
           <ul class="nav-list list">
-            <li class="header-item">
-              <a class="menu-link link" href="./index.html">Studio</a>
+            <li class="nav-item header-item">
+              <a class="menu-link link link-studio" href="./index.html"
+                >Studio</a
+              >
             </li>
-            <li class="header-item">
+            <li class="nav-item header-item">
               <a class="menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="header-item">
+            <li class="nav-item header-item">
               <a class="menu-link link" href="">Contacts</a>
             </li>
           </ul>
@@ -62,7 +64,9 @@
           <h1 class="hero-primary-heading">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="btn">Order Service</button>
+          <button data-modal-open type="button" class="btn">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -310,7 +314,7 @@
         <ul class="customers-list list">
           <li class="company-logo company-logo-item">
             <a href="#" class="company-logo-link item-link-company-one">
-              <svg class="logo-icon" width="104px" height="56px-item">
+              <svg class="logo-icon" width="104px" height="56px">
                 <use href="./images/sprite.svg#icon-Logo-one"></use>
               </svg>
             </a>
@@ -318,7 +322,7 @@
 
           <li class="company-logo company-logo-item">
             <a href="#" class="company-logo-link item-link-company-two">
-              <svg class="logo-icon" width="104px" height="56px-item">
+              <svg class="logo-icon" width="104px" height="56px">
                 <use href="./images/sprite.svg#icon-Logo-two"></use>
               </svg>
             </a>
@@ -326,7 +330,7 @@
 
           <li class="company-logo company-logo-item">
             <a href="#" class="company-logo-link item-link-company-three">
-              <svg class="logo-icon" width="104px" height="56px-item">
+              <svg class="logo-icon" width="104px" height="56px">
                 <use href="./images/sprite.svg#icon-Logo-three"></use>
               </svg>
             </a>
@@ -334,7 +338,7 @@
 
           <li class="company-logo company-logo-item">
             <a href="#" class="company-logo-link item-link-company-four">
-              <svg class="logo-icon" width="104px" height="56px-item">
+              <svg class="logo-icon" width="104px" height="56px">
                 <use href="./images/sprite.svg#icon-Logo-four"></use>
               </svg>
             </a>
@@ -342,7 +346,7 @@
 
           <li class="company-logo company-logo-item">
             <a href="#" class="company-logo-link item-link-company-five">
-              <svg class="logo-icon" width="104px" height="56px-item">
+              <svg class="logo-icon" width="104px" height="56px">
                 <use href="./images/sprite.svg#icon-Logo-five"></use>
               </svg>
             </a>
@@ -350,7 +354,7 @@
 
           <li class="company-logo company-logo-item">
             <a href="#" class="company-logo-link item-link-company-six">
-              <svg class="logo-icon" width="104px" height="56px-item">
+              <svg class="logo-icon" width="104px" height="56px">
                 <use href="./images/sprite.svg#icon-Logo-six"></use>
               </svg>
             </a>
@@ -378,7 +382,7 @@
           <ul class="social-list list">
             <li class="social-item item">
               <a href="#" class="social-list-item-link item-link-instagram">
-                <svg class="social-list-icon" width="24" height="24">
+                <svg class="social-list-icon" width="24px" height="24px">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -386,7 +390,7 @@
 
             <li class="social-item item">
               <a href="#" class="social-list-item-link item-link-twitter">
-                <svg class="social-list-icon" width="24" height="24">
+                <svg class="social-list-icon" width="24px" height="24px">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -394,7 +398,7 @@
 
             <li class="social-item item">
               <a href="#" class="social-list-item-link item-link-facebook">
-                <svg class="social-list-icon" width="24" height="24">
+                <svg class="social-list-icon" width="24px" height="24px">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -402,7 +406,7 @@
 
             <li class="social-item item">
               <a href="#" class="social-list-item-link item-link-linkedin">
-                <svg class="social-list-icon" width="24" height="24">
+                <svg class="social-list-icon" width="24px" height="24px">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -412,5 +416,16 @@
       </div>
     </footer>
     <!--FOOTER-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-close-btn"></button>
+        <h3 class="header-item modal-header">
+          Leave your contacts and we will call you back
+        </h3>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
