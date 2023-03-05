@@ -234,6 +234,7 @@ margin-bottom: 0px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .btn:hover {
@@ -655,12 +656,15 @@ margin-bottom: 0px;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
+    
+    transition: opacity 500ms;
 
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    transition: opacity 450ms;
 }
 
 .modal {
@@ -674,6 +678,7 @@ margin-bottom: 0px;
     background-color: var(--modal-bcgd);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
 
 }
 
@@ -705,13 +710,10 @@ margin-bottom: 0px;
 }
 
 .modal-heading {
-    outline: red solid 1px;
 
     padding-top: 72px;
    
    
-    
-    
     text-align: center;
     font-size: 16px;
     font-weight: 500;
