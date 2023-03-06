@@ -469,13 +469,12 @@ position: absolute;
 .card-thumb {
     display: inline-block;
     position: absolute;
-    content: "";
 
     width: 360px;
     height: 300px;
     top: 0;
-
     padding: 40px 32px;
+
     background-color: #4D5AE5;
     color: var(--btn-back);
     
