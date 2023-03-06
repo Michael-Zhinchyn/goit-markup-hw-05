@@ -458,7 +458,6 @@ margin-bottom: 0px;
 }
 
 
-
 .card-item:hover .card-thumb,
 .card-item:focus .card-thumb {
     opacity: 1;
@@ -477,28 +476,11 @@ margin-bottom: 0px;
     opacity: 0;
     transform: translateY(100%);
     transition: transform var(--basic-transition);
+
+    opacity: 1;
+        transform: translateY(100%);
+        transition: transform var(--basic-transition);
     }
-    
-.card-item:hover .card-thumb,
-.card-item:focus .card-thumb {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.card-thumb {
-    position: absolute;
-    width: 360px;
-    height: 300px;
-    top: 0;
-    padding: 40px 32px;
-    background-color: #4D5AE5;
-    color: var(--btn-back);
-
-    opacity: 1;
-    transform: translateY(100%);
-    transition: transform var(--basic-transition);
-}
-
 
 /*-------------Hero------------*/
 
