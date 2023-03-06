@@ -429,6 +429,10 @@
     transform: translateY(0);
 }
 
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
 .card-thumb {
     position: absolute;
     width: 360px;
