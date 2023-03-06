@@ -12,6 +12,7 @@
     --icon-background: #AFB1B8;
     --icon-hover-green: #31D0AA;
     --modal-bcgd: #FCFCFC;
+    --basic-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   img {
@@ -439,6 +440,12 @@ margin-bottom: 0px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.card-item {overflow: hidden;}
+
+.list-link {
+    position: relative;
+}
+
 .card-content {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -449,16 +456,13 @@ margin-bottom: 0px;
 
 .list-link:hover .sub-card,
 .list-link:focus .sub-card {
-    display: block;
-}
-
-.list-link{
-    position: relative;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .sub-card {
     position: absolute;
-    display: none;
+    opacity: 0;
 
     top:0;
     left: 0;
@@ -466,10 +470,10 @@ margin-bottom: 0px;
     height: 300px;
     background-color: #4D5AE5;
     padding: 40px 32px;
-
     line-height: 1.5;
     color: var(--btn-back);
-
+    transform: translateY(100%);
+    transition: transform var(--basic-transition);
     }
 
 
@@ -580,9 +584,7 @@ margin-bottom: 0px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--basic-transition);
 }
 
 .social-list-item-link:hover,
@@ -618,9 +620,7 @@ margin-bottom: 0px;
 
 .logo-icon {
     fill: var(--icon-background);
-    transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--basic-transition);
     }
 
 
@@ -698,9 +698,8 @@ margin-bottom: 0px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--btn-border);
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--basic-transition);
+    
 }
 
 
